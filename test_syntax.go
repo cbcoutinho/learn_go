@@ -10,6 +10,7 @@ func main() {
 
   fmt.Println(x, "+", y, "=", x+y)
 
+  var a  []int              // An initialized array
   var a1 [4]int             // An array of 4 ints, initialized to all 0.
   // var a1 [x]int             // An array of 4 ints, initialized to all 0.
   // var a1 [x][][][]int             // An array of 4 ints, initialized to all 0.
@@ -17,6 +18,7 @@ func main() {
   a3 := make([]int, x, y)      // An array of `x` ints
   a4 := []int{1,2,3}         // An array of 4 ints, initialized to all 0.
 
+  fmt.Println("a has size of: ",  len(a),  "and capacitiy: ", cap(a))
   fmt.Println("a1 has size of: ", len(a1), "and capacitiy: ", cap(a1))
   fmt.Println("a2 has size of: ", len(a2), "and capacitiy: ", cap(a2))
   fmt.Println("a3 has size of: ", len(a3), "and capacitiy: ", cap(a3))
